@@ -5,6 +5,15 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
 
 function Sidebar() {
+
+    const createChat = () => {
+        const input = prompt(
+            "Please enter an email address for the user you wish to connect to"
+        )
+    };
+
+
+
   return (
     <Container>
         <Header>
@@ -25,7 +34,7 @@ function Sidebar() {
             <SearchInput placeholder="Search chats"/>
         </Search>
 
-        <SidebarButton>Start a new chat</SidebarButton>
+        <SidebarButton onClick={createChat}>Start a new chat</SidebarButton>
     </Container>
   )
 }
@@ -71,5 +80,10 @@ flex: 1;
 
 const SidebarButton = styled(Button)`
 width: 100%;
+
+&&&{
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
 
 `;
