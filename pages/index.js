@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Sidebar from './components/Sidebar'
+import Sidebar from '../components/Sidebar'
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>MyWhatsApp</title>
         <link rel="icon" href="/favicon.ico" />
